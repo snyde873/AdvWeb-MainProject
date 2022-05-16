@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+
+		<!-- CSS File -->
+		<link rel="stylesheet" type="text/css" href="baking.css"/>
+
+		<!-- Javascript File 
+		<script src="baking.js"></script> -->
+	
+		<title>Blueberry Muffins</title>
+	
+	</head>
+
+	<body>
+
+			<div class="header">
+				
+					<table style="width:100%">
+							<tr>
+							    <th style="width:20%"> 		<a href="baking.html">RECIPES</a> 		</th>
+							    <th style="width:20%"> 		<a href="baking.html">CHALLENGES</a> 	</th>
+							    <th style="width:20%"> 		<div class="icon"> 		<a href="baking.html"> 	<img src="icon.png" id="icon"> 	</a> 	</div> </th>
+							    <th style="width:20%"> 		<a href="baking.html">ABOUT</a> 		</th>
+							    <th style="width:20%"> 		<a href="baking.html">SUBMIT</a> 		</th>
+						  	</tr>
+					</table>
+
+			  
+						  <div class="progress-container">
+						    	<div class="progress-bar" id="myBar"></div>
+						  </div> <!-- progress-container -->
+			
+			</div> <!-- header -->
+
+			<div class="outer-wrapper">
+	  				<div class="wrapper">
+			    				<div class="slide one">		<img src="photos/cover.jpg" style="height: 85%; width: auto;">				</div>
+			   					<div class="slide two">		<img src="ingreds gif/ingredients.gif" style="height: 85%; width: auto;">	</div>
+			    				<div class="slide three">	<img src="photos/stepone.jpg" style="height: 85%; width: auto;">			</div>
+			    				<div class="slide four">	<img src="photos/steptwo.jpg" style="height: 85%; width: auto;">			</div>
+			    				<div class="slide five">	<img src="egg gif/stepthree.gif" style="height: 85%; width: auto;">			</div>
+			    				<div class="slide six">		<img src="photos/stepfour.jpg" style="height: 85%; width: auto;">			</div>
+			    				<div class="slide seven">	<img src="photos/stepfive.jpg" style="height: 85%; width: auto;">			</div>
+			    				<div class="slide eight">	<img src="photos/stepsix.jpg" style="height: 85%; width: auto;">			</div>
+			    				<div class="slide nine">	<img src="photos/stepseven.jpg" style="height: 85%; width: auto;">			</div>
+	  				</div> <!-- wrapper -->
+			</div> <!-- outer wrapper -->
+
+			<script>
+			// When the user scrolls the page, execute myFunction 
+			window.onscroll = function() {myFunction()};
+
+			function myFunction() {
+			  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+			  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+			  var scrolled = (winScroll / height) * 100;
+			  document.getElementById("myBar").style.width = scrolled + "%";
+			}
+			</script>
+
+	</body>
+
+</html>
